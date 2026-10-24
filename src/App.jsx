@@ -1,59 +1,219 @@
+import { useState } from 'react'
 import ProjectCard from './components/ProjectCard.jsx'
 
 const projects = [
-  { title: 'Project One', description: 'A short description of something you built, researched, designed, or care about.', tags: ['React', 'CSS'], link: '#contact' },
-  { title: 'Project Two', description: 'Use this card to share a class project, organization, internship, or personal interest.', tags: ['JavaScript', 'Design'], link: '#contact' },
-  { title: 'Project Three', description: 'Your website does not need to be finished to show what you are learning and creating.', tags: ['Learning', 'Growth'], link: '#contact' },
+  {
+    title: 'Project One',
+    description: 'A short description of something you built, researched, designed, or care about.',
+    tags: ['React', 'CSS'],
+    github: 'https://github.com/your-username',
+    demo: '#contact',
+  },
+  {
+    title: 'Project Two',
+    description: 'Use this card to share a class project, organization, internship, or personal interest.',
+    tags: ['JavaScript', 'Design'],
+    github: 'https://github.com/your-username',
+    demo: '#contact',
+  },
+  {
+    title: 'Project Three',
+    description: 'Your website does not need to be finished to show what you are learning and creating.',
+    tags: ['Learning', 'Growth'],
+    github: 'https://github.com/your-username',
+    demo: '#contact',
+  },
 ]
 
-function Nav() {
+const skills = [
+  'Python',
+  'Java',
+  'JavaScript',
+  'React',
+  'SQL',
+  'GitHub',
+  'Figma',
+  'Data Analysis',
+]
+
+function Nav({ isDarkMode, toggleDarkMode }) {
   return (
     <nav className="nav" aria-label="Main navigation">
-      <a className="logo" href="#home">YN<span>.</span></a>
+      <a className="logo" href="#home">
+        YN<span>.</span>
+      </a>
+
       <div className="nav-links">
-        <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
+
+      <button
+        className="theme-button"
+        onClick={toggleDarkMode}
+        aria-label="Toggle dark mode"
+      >
+        {isDarkMode ? '☀ Light' : '☾ Dark'}
+      </button>
     </nav>
   )
 }
 
 export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  function toggleDarkMode() {
+    setIsDarkMode(!isDarkMode)
+  }
+
   return (
-    <>
-      <Nav />
+    <div className={isDarkMode ? 'app dark-mode' : 'app'}>
+      <Nav isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
       <main>
         <section className="hero" id="home">
-          <p className="eyebrow">Hello, I’m</p>
-          <h1>Your Name.</h1>
-          <h2>I build, learn, and create.</h2>
-          <p className="hero-copy">I’m a student and aspiring <strong>your career goal</strong> who enjoys using technology to solve meaningful problems.</p>
-          <a className="button" href="#projects">See my work <span aria-hidden="true">↓</span></a>
+          <div>
+            <p className="eyebrow">Hello, I’m</p>
+            <h1>Your Name.</h1>
+            <h2>I build, learn, and create.</h2>
+
+            <p className="hero-copy">
+              I’m a student and aspiring <strong>your career goal</strong> who
+              enjoys using technology to solve meaningful problems.
+            </p>
+
+            <div className="hero-buttons">
+              <a className="button" href="#projects">
+                See my work <span aria-hidden="true">↓</span>
+              </a>
+
+              <a
+                className="resume-button"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View résumé <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="profile-placeholder" aria-label="Your future profile photo">
+            <span>Your</span>
+            <strong>Photo</strong>
+            <small>Optional Part 2 upgrade</small>
+          </div>
         </section>
 
         <section className="section about" id="about">
-          <div><p className="eyebrow">A little about me</p><h2>More than a résumé.</h2></div>
+          <div>
+            <p className="eyebrow">A little about me</p>
+            <h2>More than a résumé.</h2>
+          </div>
+
           <div className="about-copy">
-            <p>Write a few sentences here about who you are, what you’re studying or working on, and the kinds of problems you want to help solve.</p>
-            <p>This is also a great spot to mention communities, hobbies, or values that shape how you approach your work.</p>
+            <p>
+              Write a few sentences here about who you are, what you’re studying
+              or working on, and the kinds of problems you want to help solve.
+            </p>
+
+            <p>
+              This is also a great spot to mention communities, hobbies, or
+              values that shape how you approach your work.
+            </p>
+          </div>
+        </section>
+
+        <section className="section" id="skills">
+          <p className="eyebrow">Things I use</p>
+          <h2>Skills and tools</h2>
+
+          <div className="skills-list">
+            {skills.map((skill) => (
+              <span className="skill" key={skill}>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section className="section experience-section" id="experience">
+          <p className="eyebrow">Where I’ve learned</p>
+          <h2>Experience</h2>
+
+          <div className="experience-list">
+            <article className="experience-item">
+              <div>
+                <p className="experience-date">2025 - Present</p>
+                <h3>Your Current Role</h3>
+                <p className="experience-place">Organization or Company Name</p>
+              </div>
+
+              <p>
+                Add one or two sentences about what you do, what you’ve learned,
+                or the impact you’ve made in this role.
+              </p>
+            </article>
+
+            <article className="experience-item">
+              <div>
+                <p className="experience-date">2024 - 2025</p>
+                <h3>Previous Role or Organization</h3>
+                <p className="experience-place">Organization or Company Name</p>
+              </div>
+
+              <p>
+                You can also include internships, clubs, research, volunteer
+                experiences, or meaningful class projects here.
+              </p>
+            </article>
           </div>
         </section>
 
         <section className="section" id="projects">
-          <p className="eyebrow">Things I’ve worked on</p><h2>Featured projects</h2>
-          <div className="project-grid">{projects.map((project) => <ProjectCard key={project.title} {...project} />)}</div>
+          <p className="eyebrow">Things I’ve worked on</p>
+          <h2>Featured projects</h2>
+
+          <div className="project-grid">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
         </section>
 
         <section className="contact" id="contact">
-          <p className="eyebrow">Let’s connect</p><h2>Have an idea or opportunity?</h2>
+          <p className="eyebrow">Let’s connect</p>
+          <h2>Have an idea or opportunity?</h2>
           <p>I’d love to hear from you. Replace this with your own email address.</p>
-          <a className="button light" href="mailto:your.email@example.com">Say hello</a>
+
+          <a className="button light" href="mailto:your.email@example.com">
+            Say hello
+          </a>
+
           <div className="social-links">
-            <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/your-username"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
           </div>
         </section>
       </main>
+
       <footer>Built with React + Vite · Make it yours.</footer>
-    </>
+    </div>
   )
 }
