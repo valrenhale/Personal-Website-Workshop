@@ -1,4 +1,4 @@
-# Personal Website Workshop — Part 1
+# Personal Website Workshop
 
 A beginner-friendly React and Vite portfolio starter.
 
@@ -7,7 +7,7 @@ A beginner-friendly React and Vite portfolio starter.
 1. Install Node.js LTS.
 2. Open this folder in VS Code.
 3. In the integrated terminal, run `npm install` and then `npm run dev`.
-4. Open the local address Vite prints, usually `http://localhost:5173`.
+4. Open the local address Vite prints, usually `http://localhost:5173/Personal-Website-Workshop/`.
 5. Customize to fit your experience!
 
 ## Important files
