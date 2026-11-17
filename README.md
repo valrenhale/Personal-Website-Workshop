@@ -15,3 +15,5 @@ A beginner-friendly React and Vite portfolio starter.
 - `src/App.jsx`: page content and project data
 - `src/components/ProjectCard.jsx`: reusable project card
 - `src/index.css`: visual styling
+
+// does not do anything
