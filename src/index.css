@@ -36,9 +36,9 @@ body {
   --ink: #f6f2ff;
   --muted: #c8c1d5;
   --paper: #191622;
-  --lavender: #332b4b;
-  --purple: #bca6ff;
-  --peach: #ffb891;
+  --powderblue: #B0E0E6;
+  --pantone: #96B3D2;
+  --cream: #FFFDD0;
   --line: #4a4359;
   --card: #24202f;
 }
@@ -66,7 +66,7 @@ a {
 }
 
 .logo span {
-  color: var(--purple);
+  color: var(--pantone);
 }
 
 .nav-links {
@@ -82,7 +82,7 @@ a {
 
 .nav-links a:hover,
 .social-links a:hover {
-  color: var(--purple);
+  color: var(--pantone);
 }
 
 .theme-button {
@@ -98,8 +98,8 @@ a {
 }
 
 .theme-button:hover {
-  color: var(--purple);
-  border-color: var(--purple);
+  color: var(--pantone);
+  border-color: var(--pantone);
 }
 
 main {
@@ -127,7 +127,7 @@ main {
   right: -70px;
   z-index: 0;
   border-radius: 50%;
-  background: var(--lavender);
+  background: var(--powderblue);
 }
 
 .hero > div {
@@ -136,7 +136,7 @@ main {
 }
 
 .eyebrow {
-  color: var(--purple);
+  color: var(--pantone);
   font-family: 'DM Mono', monospace;
   font-size: 0.8rem;
   font-weight: 500;
@@ -164,7 +164,7 @@ h1 {
 
 .hero h2 {
   margin: 0.2rem 0 24px;
-  color: var(--purple);
+  color: var(--pantone);
   font-size: clamp(2rem, 4.5vw, 3.6rem);
 }
 
@@ -195,7 +195,7 @@ h1 {
 
 .button {
   color: white;
-  background: var(--purple);
+  background: var(--pantone);
 }
 
 .button:hover {
@@ -209,8 +209,8 @@ h1 {
 }
 
 .resume-button:hover {
-  color: var(--purple);
-  border-color: var(--purple);
+  color: var(--pantone);
+  border-color: var(--pantone);
   transform: translateY(-2px);
 }
 
@@ -223,7 +223,7 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--card);
-  box-shadow: 10px 10px 0 var(--peach);
+  box-shadow: 10px 10px 0 var(--cream);
 }
 
 .profile-placeholder span {
@@ -233,7 +233,7 @@ h1 {
 }
 
 .profile-placeholder strong {
-  color: var(--purple);
+  color: var(--pantone);
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
 }
@@ -262,7 +262,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  background: color-mix(in srgb, var(--lavender) 35%, var(--paper));
+  background: color-mix(in srgb, var(--powderblue) 35%, var(--paper));
 }
 
 .about h2 {
@@ -289,7 +289,7 @@ h1 {
 }
 
 .experience-section {
-  background: color-mix(in srgb, var(--lavender) 20%, var(--paper));
+  background: color-mix(in srgb, var(--powderblue) 20%, var(--paper));
 }
 
 .experience-list {
@@ -318,7 +318,7 @@ h1 {
 
 .experience-date {
   margin-bottom: 9px;
-  color: var(--purple);
+  color: var(--pantone);
   font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
 }
@@ -338,7 +338,7 @@ h1 {
 }
 
 .project-card:hover {
-  box-shadow: 8px 8px 0 var(--peach);
+  box-shadow: 8px 8px 0 var(--cream);
   transform: translateY(-5px);
 }
 
@@ -346,8 +346,8 @@ h1 {
   height: 150px;
   display: grid;
   place-items: center;
-  background: var(--lavender);
-  color: var(--purple);
+  background: var(--powderblue);
+  color: var(--pantone);
   font-family: 'DM Mono', monospace;
   font-size: 0.8rem;
 }
@@ -380,7 +380,7 @@ h1 {
 .tag {
   padding: 5px 8px;
   border-radius: 20px;
-  background: color-mix(in srgb, var(--lavender) 55%, var(--paper));
+  background: color-mix(in srgb, var(--powderblue) 55%, var(--paper));
   color: var(--muted);
   font-family: 'DM Mono', monospace;
   font-size: 0.68rem;
@@ -393,7 +393,7 @@ h1 {
 }
 
 .text-link {
-  color: var(--purple);
+  color: var(--pantone);
   font-size: 0.86rem;
   font-weight: 700;
   text-decoration: none;
@@ -411,7 +411,7 @@ h1 {
 }
 
 .contact .eyebrow {
-  color: var(--peach);
+  color: var(--cream);
 }
 
 .contact h2 {
@@ -426,7 +426,7 @@ h1 {
 
 .light {
   color: var(--ink);
-  background: var(--peach);
+  background: var(--cream);
 }
 
 .light:hover {
