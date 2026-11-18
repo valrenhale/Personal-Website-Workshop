@@ -28,11 +28,8 @@ const projects = [
 const skills = [
   'Python',
   'Java',
-  'JavaScript',
   'React',
-  'SQL',
   'GitHub',
-  'Figma',
   'Data Analysis',
 ]
 
