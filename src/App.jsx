@@ -40,7 +40,7 @@ function Nav({ isDarkMode, toggleDarkMode }) {
   return (
     <nav className="nav" aria-label="Main navigation">
       <a className="logo" href="#home">
-        YN<span>.</span>
+        SU<span>.</span>
       </a>
 
       <div className="nav-links">
@@ -188,7 +188,7 @@ export default function App() {
         <section className="contact" id="contact">
           <p className="eyebrow">Let’s connect</p>
           <h2>Have an idea or opportunity?</h2>
-          <p>I’d love to hear from you. Replace this with your own email address.</p>
+          <p>I’d love to hear from you.</p>
 
           <a className="button light" href="mailto:sutama@calpoly.edu">
             Say hello
