@@ -6,21 +6,21 @@ const projects = [
     title: 'Project One',
     description: 'A short description of something you built, researched, designed, or care about.',
     tags: ['React', 'CSS'],
-    github: 'https://github.com/your-username',
+    github: 'https://github.com/valrenhale',
     demo: '#contact',
   },
   {
     title: 'Project Two',
     description: 'Use this card to share a class project, organization, internship, or personal interest.',
     tags: ['JavaScript', 'Design'],
-    github: 'https://github.com/your-username',
+    github: 'https://github.com/valrenhale',
     demo: '#contact',
   },
   {
     title: 'Project Three',
     description: 'Your website does not need to be finished to show what you are learning and creating.',
     tags: ['Learning', 'Growth'],
-    github: 'https://github.com/your-username',
+    github: 'https://github.com/valrenhale',
     demo: '#contact',
   },
 ]
@@ -77,11 +77,11 @@ export default function App() {
         <section className="hero" id="home">
           <div>
             <p className="eyebrow">Hello, I’m</p>
-            <h1>Your Name.</h1>
+            <h1>Sofia Utama.</h1>
             <h2>I build, learn, and create.</h2>
 
             <p className="hero-copy">
-              I’m a student and aspiring <strong>your career goal</strong> who
+              I’m a student and aspiring <strong>computer engineer</strong> who
               enjoys using technology to solve meaningful problems.
             </p>
 
@@ -116,8 +116,9 @@ export default function App() {
 
           <div className="about-copy">
             <p>
-              Write a few sentences here about who you are, what you’re studying
-              or working on, and the kinds of problems you want to help solve.
+              I'm a first-year computer engineering student at Cal Poly SLO 
+              with a strong passion for integrating hardware with software. 
+              I am currently on the firmware subsystem at Cal Poly Racing.
             </p>
 
             <p>
@@ -189,13 +190,13 @@ export default function App() {
           <h2>Have an idea or opportunity?</h2>
           <p>I’d love to hear from you. Replace this with your own email address.</p>
 
-          <a className="button light" href="mailto:your.email@example.com">
+          <a className="button light" href="mailto:sutama@calpoly.edu">
             Say hello
           </a>
 
           <div className="social-links">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/valrenhale"
               target="_blank"
               rel="noreferrer"
             >
@@ -203,7 +204,7 @@ export default function App() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/sofia-utama"
               target="_blank"
               rel="noreferrer"
             >
