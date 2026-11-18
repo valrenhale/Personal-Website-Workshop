@@ -117,10 +117,6 @@ export default function App() {
               with a strong passion for integrating hardware with software. 
               I am currently on the firmware subsystem at Cal Poly Racing.
             </p>
-
-            <p>
-              
-            </p>
           </div>
         </section>
 
