@@ -117,6 +117,11 @@ export default function App() {
               with a strong passion for integrating hardware with software. 
               I am currently on the firmware subsystem at Cal Poly Racing.
             </p>
+
+            <p>
+              I am also a member of Cal Poly WISH, where I meet with other 
+              women in STEM to discuss our experiences and support each other.
+            </p>
           </div>
         </section>
 
