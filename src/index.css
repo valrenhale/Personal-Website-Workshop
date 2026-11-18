@@ -6,7 +6,7 @@
   --paper: #fffcf6;
   --powderblue: #B0E0E6;
   --pantone: #96B3D2;
-  --cream: #FFFDD0;
+  --cafe: #938366;
   --line: #ddd7cc;
   --card: #ffffff;
 }
@@ -38,7 +38,7 @@ body {
   --paper: #191622;
   --powderblue: #B0E0E6;
   --pantone: #96B3D2;
-  --cream: #FFFDD0;
+  --cafe: #938366;
   --line: #4a4359;
   --card: #24202f;
 }
@@ -223,7 +223,7 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--card);
-  box-shadow: 10px 10px 0 var(--cream);
+  box-shadow: 10px 10px 0 var(--cafe);
 }
 
 .profile-placeholder span {
@@ -338,7 +338,7 @@ h1 {
 }
 
 .project-card:hover {
-  box-shadow: 8px 8px 0 var(--cream);
+  box-shadow: 8px 8px 0 var(--cafe);
   transform: translateY(-5px);
 }
 
@@ -411,7 +411,7 @@ h1 {
 }
 
 .contact .eyebrow {
-  color: var(--cream);
+  color: var(--cafe);
 }
 
 .contact h2 {
@@ -426,7 +426,7 @@ h1 {
 
 .light {
   color: var(--ink);
-  background: var(--cream);
+  background: var(--cafe);
 }
 
 .light:hover {
