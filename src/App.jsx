@@ -122,8 +122,7 @@ export default function App() {
             </p>
 
             <p>
-              This is also a great spot to mention communities, hobbies, or
-              values that shape how you approach your work.
+              
             </p>
           </div>
         </section>
