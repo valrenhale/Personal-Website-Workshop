@@ -125,7 +125,8 @@ export default function App() {
 
             <p>
               I am also a member of Cal Poly WISH, where I meet with other 
-              women in STEM to discuss our experiences and support each other.
+              women involved in hardware and software to discuss our experiences 
+              and support each other through community-building events.
             </p>
           </div>
         </section>
