@@ -147,27 +147,35 @@ export default function App() {
           <div className="experience-list">
             <article className="experience-item">
               <div>
-                <p className="experience-date">2025 - Present</p>
-                <h3>Your Current Role</h3>
-                <p className="experience-place">Organization or Company Name</p>
+                <p className="experience-date">Summer 2025</p>
+                <h3>Software Engineer Intern</h3>
+                <p className="experience-place">Roku</p>
               </div>
 
               <p>
-                Add one or two sentences about what you do, what you’ve learned,
-                or the impact you’ve made in this role.
+                Optimized full-stack tic-tac-toe trivia game 
+                for Roku TV channel through implementing 
+                backend and frontend company-specific 
+                coding languages BrightScript, SceneGraph for enhanced 
+                performance and game state handling.
               </p>
             </article>
 
             <article className="experience-item">
               <div>
-                <p className="experience-date">2024 - 2025</p>
-                <h3>Previous Role or Organization</h3>
-                <p className="experience-place">Organization or Company Name</p>
+                <p className="experience-date">Summer 2024</p>
+                <h3>AI/ML Research Intern</h3>
+                <p className="experience-place">Nvidia x San Jose Works</p>
               </div>
 
               <p>
-                You can also include internships, clubs, research, volunteer
-                experiences, or meaningful class projects here.
+                Launched AI recycling categorization machine 
+                utilizing preexisting YOLOv5 model through research 
+                on deep learning with Nvidia mentor by pairing 
+                YOLOv5 computer vision detection model with 
+                supervised learning data set.
+                Achieved 75% accuracy in detecting trash and recyclables 
+                in AI recycling detection performance.
               </p>
             </article>
           </div>
