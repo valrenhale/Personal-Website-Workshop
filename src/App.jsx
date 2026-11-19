@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: '1988 Corvette C4 Interior Restoration',
-    description: 'Restoring a classic 1988 Corvette C4 with modern upgrades and enhancements with firewall, differential brace, throttle cable brace, flat sheet metal car bed, and other modifications.',
+    description: 'Restoring a classic 1988 Corvette C4 with modern upgrades and enhancements with firewall for safety and protection, differential brace, throttle cable brace, flat sheet metal car bed, and other modifications.',
     tags: ['Autodesk Fusion CAD', 'Hands-on Design'],
     github: 'https://github.com/valrenhale',
     demo: '#contact',
