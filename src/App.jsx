@@ -98,10 +98,10 @@ export default function App() {
             </div>
           </div>
 
-          <div className="profile-placeholder" aria-label="Your future profile photo">
-            <span>Your</span>
-            <strong>Photo</strong>
-            <small>Optional Part 2 upgrade</small>
+          <div className="profile-placeholder" aria-label="My profile photo">
+            <span></span>
+            <strong></strong>
+            <small></small>
           </div>
         </section>
 
