@@ -89,7 +89,7 @@ export default function App() {
 
               <a
                 className="resume-button"
-                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                href={`${import.meta.env.BASE_URL}sresume.pdf`}
                 target="_blank"
                 rel="noreferrer"
               >
