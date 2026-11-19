@@ -98,10 +98,12 @@ export default function App() {
             </div>
           </div>
 
-          <div className="profile-placeholder" aria-label="My profile photo">
-            <span></span>
-            <strong></strong>
-            <small></small>
+          <div className="profile-frame">
+            <img
+              className="profile-photo"
+              src="/sprofile.jpg"
+              alt="My profile photo"
+            />
           </div>
         </section>
 

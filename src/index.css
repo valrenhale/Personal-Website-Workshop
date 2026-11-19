@@ -243,6 +243,21 @@ h1 {
   color: var(--muted);
 }
 
+.profile-frame {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  box-shadow: 10px 10px 0 var(--cafe);
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+}
+
 .section {
   max-width: 1120px;
   margin: auto;
@@ -479,7 +494,8 @@ footer {
     right: -100px;
   }
 
-  .profile-placeholder {
+  .profile-placeholder,
+  .profile-frame {
     max-width: 380px;
   }
 
