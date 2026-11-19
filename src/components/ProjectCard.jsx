@@ -8,7 +8,7 @@ export default function ProjectCard({
   return (
     <article className="project-card">
       <div className="project-image" aria-hidden="true">
-        <span>Project image</span>
+        <span></span>
       </div>
 
       <div className="project-content">

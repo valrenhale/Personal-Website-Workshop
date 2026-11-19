@@ -3,22 +3,25 @@ import ProjectCard from './components/ProjectCard.jsx'
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A short description of something you built, researched, designed, or care about.',
-    tags: ['React', 'CSS'],
+    title: 'Low Voltage Battery Management System',
+    description: 'Crafting low voltage battery management system (BMS) for new in-house battery against damage to transmit data metrics such as voltage, current, and temperature by checking the CRC bit for validation over network.',
+    tags: ['C++', 'SPI'],
     github: 'https://github.com/valrenhale',
     demo: '#contact',
   },
   {
-    title: 'Project Two',
-    description: 'Use this card to share a class project, organization, internship, or personal interest.',
-    tags: ['JavaScript', 'Design'],
+    title: '1988 Corvette C4 Interior Restoration',
+    description: 'Restoring a classic 1988 Corvette C4 with modern upgrades and enhancements with firewall, differential brace, throttle cable brace, and other modifications.',
+    tags: ['Autodesk Fusion CAD', 'Hands-on Design'],
     github: 'https://github.com/valrenhale',
     demo: '#contact',
   },
   {
     title: 'Project Three',
     description: 'Your website does not need to be finished to show what you are learning and creating.',
+    // A short description of something you built, researched, designed, or care about.
+    // You can also include a link to a live demo or GitHub repo if you have one.
+    // Use this card to share a class project, organization, internship, or personal interest.
     tags: ['Learning', 'Growth'],
     github: 'https://github.com/valrenhale',
     demo: '#contact',
