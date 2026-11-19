@@ -101,7 +101,7 @@ export default function App() {
           <div className="profile-frame">
             <img
               className="profile-photo"
-              src="/sprofile.jpg"
+              src={`${import.meta.env.BASE_URL}sprofile.jpg`}
               alt="My profile photo"
             />
           </div>
